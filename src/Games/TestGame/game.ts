@@ -1,13 +1,14 @@
-import { GameBase } from "../../Engine/Core/gamebase";
-import { IWindowProperties } from "../../Engine/Properties/window-properties";
+import { GameBase } from "../../Engine/Core/game-base";
+import { IEngineProperties } from "../../Engine/Properties/game-properties";
 
 export class GameTest extends GameBase{
-    constructor(windowProperties: IWindowProperties, element: HTMLElement)
+    constructor(windowProperties: IEngineProperties, element: HTMLElement)
     {
         super(windowProperties, element);
     }
 
-    draw(): void {
+    Draw(): void {
+        this._windowGame.GetContext()!.clearColor(1, 1, 0, 1);
     }
     
 }
