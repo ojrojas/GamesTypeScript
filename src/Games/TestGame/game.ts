@@ -8,7 +8,7 @@ export class GameTest extends GameBase{
     }
 
     Draw(): void {
-        this._windowGame.GetContext()!.clearColor(1, 1, 0, 1);
+        this._windowGame.GetContext()!.clearColor(0, .6, .8, 0);
     }
     
 }

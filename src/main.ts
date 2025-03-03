@@ -4,7 +4,7 @@ import { GameTest } from './Games/TestGame/game';
 
 const engineProperties: IEngineProperties = {
   windowContext: 'webgl2',
-  windowSize: { width: 800, height: 600 },
+  windowSize: { width: 1024, height: 768 },
   windowName: 'WindowGames'
 }
 
